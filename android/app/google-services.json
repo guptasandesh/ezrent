@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "675326316148",
+    "project_id": "ezrent-8ccb2",
+    "storage_bucket": "ezrent-8ccb2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675326316148:android:4a1615f767daf12f4dcb21",
+        "android_client_info": {
+          "package_name": "com.example.ezrent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675326316148-53ckj0kqgcji3cv6i2slp0pu1kpovu4a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ezrent",
+            "certificate_hash": "860b7b4eefc396a0d120fcd3f5fba769238d560d"
+          }
+        },
+        {
+          "client_id": "675326316148-g1js6sl7rvua40445uk5cbl7fvfnfkrv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC92Zt5CHagEtF8TnFVGbyTXDhw9BPz_AM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675326316148-g1js6sl7rvua40445uk5cbl7fvfnfkrv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "675326316148-1khuqm3jideqt1ffisao0sitmdid54ma.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ezrent"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
