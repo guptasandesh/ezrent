@@ -1,4 +1,6 @@
 import 'package:ezrent/features/auth/view/pages/login_page.dart';
+import 'package:ezrent/features/payment/view/pages/payment_page.dart';
+import 'package:ezrent/features/search/model/property_model.dart';
 import 'package:ezrent/features/splash/view/pages/splash_page.dart';
 import 'package:ezrent/features/search/view/pages/search_page.dart';
 import 'package:flutter/material.dart';
@@ -16,12 +18,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TEMP: Switch between LoginPage and SearchPage for UI testing
-    // Set to true to show SearchPage directly
-    const bool showSearchPage = true;
-    return MaterialApp(
-      title: 'Flutter Demo',
-      home: showSearchPage ? SearchPage() : const LoginPage(),
+    final property = Property(
+      imageUrl: 'assets/images/demo_1.webp',
+      name: 'Sunset Villa',
+      location: 'Goa, India',
+      pricePerRoom: 2500.0,
+      rating: 4.5,
     );
+    return MaterialApp(title: 'Flutter Demo', home: SplashPage());
   }
 }

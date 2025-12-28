@@ -1,3 +1,4 @@
+import 'package:ezrent/features/payment/view/pages/payment_page.dart';
 import 'package:flutter/material.dart';
 import '../../model/property_model.dart';
 
@@ -37,7 +38,7 @@ class PropertyDetailsPage extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Price per room: ${property.pricePerRoom}',
+              'Price per room: Rs${property.pricePerRoom.toString()}',
               style: const TextStyle(fontSize: 16),
             ),
             const SizedBox(height: 8),
@@ -52,6 +53,25 @@ class PropertyDetailsPage extends StatelessWidget {
               ],
             ),
           ],
+        ),
+      ),
+      // Add Book Now button at the bottom
+      bottomNavigationBar: Padding(
+        padding: const EdgeInsets.all(26.0),
+        child: SizedBox(
+          width: double.infinity,
+          height: 48,
+          child: ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => PaymentPage(property: property),
+                ),
+              );
+            },
+            child: const Text('Book Now'),
+          ),
         ),
       ),
     );

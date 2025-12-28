@@ -50,7 +50,7 @@ class PropertyCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      property.pricePerRoom,
+                      "price per night: Rs${property.pricePerRoom.toString()}",
                       style: const TextStyle(fontSize: 16),
                     ),
                     const SizedBox(height: 4),

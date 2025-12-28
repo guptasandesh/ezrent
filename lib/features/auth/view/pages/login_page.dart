@@ -1,6 +1,6 @@
 import 'package:ezrent/features/auth/services/auth_service.dart';
 import 'package:ezrent/features/auth/view/widgets/auth_gradient_button.dart';
-import 'package:ezrent/search_page.dart';
+import 'package:ezrent/features/search/view/pages/search_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
